@@ -1,0 +1,852 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		62B7F7F51C7327A900F33BE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B7F7F41C7327A900F33BE0 /* main.m */; };
+		62B7F7F81C7327A900F33BE0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B7F7F71C7327A900F33BE0 /* AppDelegate.m */; };
+		62B7F7FB1C7327A900F33BE0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B7F7FA1C7327A900F33BE0 /* ViewController.m */; };
+		62B7F7FE1C7327A900F33BE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62B7F7FC1C7327A900F33BE0 /* Main.storyboard */; };
+		62B7F8001C7327A900F33BE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62B7F7FF1C7327A900F33BE0 /* Assets.xcassets */; };
+		62B7F8031C7327A900F33BE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62B7F8011C7327A900F33BE0 /* LaunchScreen.storyboard */; };
+		62B7F80E1C7327AA00F33BE0 /* WechatWatchDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B7F80D1C7327AA00F33BE0 /* WechatWatchDemoTests.m */; };
+		62B7F8191C7327AA00F33BE0 /* WechatWatchDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B7F8181C7327AA00F33BE0 /* WechatWatchDemoUITests.m */; };
+		62B7F8291C73282E00F33BE0 /* WatchConnectivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B7F8281C73282E00F33BE0 /* WatchConnectivity.m */; };
+		62B7F82B1C732B4300F33BE0 /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62B7F82A1C732B4300F33BE0 /* WatchKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		62B7F82D1C732B4800F33BE0 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62B7F82C1C732B4800F33BE0 /* WatchConnectivity.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		62B7F8351C732C7900F33BE0 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62B7F8331C732C7900F33BE0 /* Interface.storyboard */; };
+		62B7F8371C732C7900F33BE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62B7F8361C732C7900F33BE0 /* Assets.xcassets */; };
+		62B7F83E1C732C7900F33BE0 /* WechatWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 62B7F83D1C732C7900F33BE0 /* WechatWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		62B7F8451C732C7900F33BE0 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B7F8441C732C7900F33BE0 /* InterfaceController.swift */; };
+		62B7F8471C732C7900F33BE0 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B7F8461C732C7900F33BE0 /* ExtensionDelegate.swift */; };
+		62B7F8491C732C7900F33BE0 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B7F8481C732C7900F33BE0 /* NotificationController.swift */; };
+		62B7F84B1C732C7900F33BE0 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B7F84A1C732C7900F33BE0 /* GlanceController.swift */; };
+		62B7F84D1C732C7900F33BE0 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B7F84C1C732C7900F33BE0 /* ComplicationController.swift */; };
+		62B7F84F1C732C7900F33BE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62B7F84E1C732C7900F33BE0 /* Assets.xcassets */; };
+		62B7F8541C732C7900F33BE0 /* WechatWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 62B7F8311C732C7900F33BE0 /* WechatWatch.app */; };
+		62B7F85F1C732D5300F33BE0 /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B7F85C1C732D5300F33BE0 /* ChatController.swift */; };
+		62B7F8601C732D5300F33BE0 /* ChatListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B7F85D1C732D5300F33BE0 /* ChatListCell.swift */; };
+		62B7F8611C732D5300F33BE0 /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B7F85E1C732D5300F33BE0 /* ChatListViewController.swift */; };
+		62B7F8691C7557F400F33BE0 /* MessageLeftRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B7F8661C7557F400F33BE0 /* MessageLeftRow.swift */; };
+		62B7F86A1C7557F400F33BE0 /* MessageRightRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B7F8671C7557F400F33BE0 /* MessageRightRow.swift */; };
+		62B7F86B1C7557F400F33BE0 /* SumitButtonRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B7F8681C7557F400F33BE0 /* SumitButtonRow.swift */; };
+		62B7F86D1C755ADD00F33BE0 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B7F86C1C755ADD00F33BE0 /* WatchSessionManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		62B7F80A1C7327AA00F33BE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62B7F7E81C7327A900F33BE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62B7F7EF1C7327A900F33BE0;
+			remoteInfo = WechatWatchDemo;
+		};
+		62B7F8151C7327AA00F33BE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62B7F7E81C7327A900F33BE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62B7F7EF1C7327A900F33BE0;
+			remoteInfo = WechatWatchDemo;
+		};
+		62B7F83F1C732C7900F33BE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62B7F7E81C7327A900F33BE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62B7F83C1C732C7900F33BE0;
+			remoteInfo = "WechatWatch Extension";
+		};
+		62B7F8511C732C7900F33BE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62B7F7E81C7327A900F33BE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62B7F8301C732C7900F33BE0;
+			remoteInfo = WechatWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		62B7F8531C732C7900F33BE0 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				62B7F8541C732C7900F33BE0 /* WechatWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62B7F8581C732C7900F33BE0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				62B7F83E1C732C7900F33BE0 /* WechatWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		62B7F7F01C7327A900F33BE0 /* WechatWatchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WechatWatchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		62B7F7F41C7327A900F33BE0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		62B7F7F61C7327A900F33BE0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		62B7F7F71C7327A900F33BE0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		62B7F7F91C7327A900F33BE0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		62B7F7FA1C7327A900F33BE0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		62B7F7FD1C7327A900F33BE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		62B7F7FF1C7327A900F33BE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		62B7F8021C7327A900F33BE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		62B7F8041C7327A900F33BE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62B7F8091C7327AA00F33BE0 /* WechatWatchDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WechatWatchDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		62B7F80D1C7327AA00F33BE0 /* WechatWatchDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WechatWatchDemoTests.m; sourceTree = "<group>"; };
+		62B7F80F1C7327AA00F33BE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62B7F8141C7327AA00F33BE0 /* WechatWatchDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WechatWatchDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		62B7F8181C7327AA00F33BE0 /* WechatWatchDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WechatWatchDemoUITests.m; sourceTree = "<group>"; };
+		62B7F81A1C7327AA00F33BE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62B7F8271C73282E00F33BE0 /* WatchConnectivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatchConnectivity.h; sourceTree = "<group>"; };
+		62B7F8281C73282E00F33BE0 /* WatchConnectivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WatchConnectivity.m; sourceTree = "<group>"; };
+		62B7F82A1C732B4300F33BE0 /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = System/Library/Frameworks/WatchKit.framework; sourceTree = SDKROOT; };
+		62B7F82C1C732B4800F33BE0 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
+		62B7F8311C732C7900F33BE0 /* WechatWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WechatWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		62B7F8341C732C7900F33BE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		62B7F8361C732C7900F33BE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		62B7F8381C732C7900F33BE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62B7F83D1C732C7900F33BE0 /* WechatWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WechatWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62B7F8431C732C7900F33BE0 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		62B7F8441C732C7900F33BE0 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		62B7F8461C732C7900F33BE0 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		62B7F8481C732C7900F33BE0 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		62B7F84A1C732C7900F33BE0 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		62B7F84C1C732C7900F33BE0 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		62B7F84E1C732C7900F33BE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		62B7F8501C732C7900F33BE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62B7F85C1C732D5300F33BE0 /* ChatController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
+		62B7F85D1C732D5300F33BE0 /* ChatListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatListCell.swift; sourceTree = "<group>"; };
+		62B7F85E1C732D5300F33BE0 /* ChatListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
+		62B7F8661C7557F400F33BE0 /* MessageLeftRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageLeftRow.swift; sourceTree = "<group>"; };
+		62B7F8671C7557F400F33BE0 /* MessageRightRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageRightRow.swift; sourceTree = "<group>"; };
+		62B7F8681C7557F400F33BE0 /* SumitButtonRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SumitButtonRow.swift; sourceTree = "<group>"; };
+		62B7F86C1C755ADD00F33BE0 /* WatchSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		62B7F7ED1C7327A900F33BE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62B7F82D1C732B4800F33BE0 /* WatchConnectivity.framework in Frameworks */,
+				62B7F82B1C732B4300F33BE0 /* WatchKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62B7F8061C7327AA00F33BE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62B7F8111C7327AA00F33BE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62B7F83A1C732C7900F33BE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		62B7F7E71C7327A900F33BE0 = {
+			isa = PBXGroup;
+			children = (
+				62B7F8321C732C7900F33BE0 /* WechatWatch */,
+				62B7F8411C732C7900F33BE0 /* WechatWatch Extension */,
+				62B7F82E1C732B6500F33BE0 /* Frameworks */,
+				62B7F7F21C7327A900F33BE0 /* WechatWatchDemo */,
+				62B7F80C1C7327AA00F33BE0 /* WechatWatchDemoTests */,
+				62B7F8171C7327AA00F33BE0 /* WechatWatchDemoUITests */,
+				62B7F7F11C7327A900F33BE0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		62B7F7F11C7327A900F33BE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62B7F7F01C7327A900F33BE0 /* WechatWatchDemo.app */,
+				62B7F8091C7327AA00F33BE0 /* WechatWatchDemoTests.xctest */,
+				62B7F8141C7327AA00F33BE0 /* WechatWatchDemoUITests.xctest */,
+				62B7F8311C732C7900F33BE0 /* WechatWatch.app */,
+				62B7F83D1C732C7900F33BE0 /* WechatWatch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		62B7F7F21C7327A900F33BE0 /* WechatWatchDemo */ = {
+			isa = PBXGroup;
+			children = (
+				62B7F7F61C7327A900F33BE0 /* AppDelegate.h */,
+				62B7F7F71C7327A900F33BE0 /* AppDelegate.m */,
+				62B7F7F91C7327A900F33BE0 /* ViewController.h */,
+				62B7F7FA1C7327A900F33BE0 /* ViewController.m */,
+				62B7F8271C73282E00F33BE0 /* WatchConnectivity.h */,
+				62B7F8281C73282E00F33BE0 /* WatchConnectivity.m */,
+				62B7F7FC1C7327A900F33BE0 /* Main.storyboard */,
+				62B7F7FF1C7327A900F33BE0 /* Assets.xcassets */,
+				62B7F8011C7327A900F33BE0 /* LaunchScreen.storyboard */,
+				62B7F8041C7327A900F33BE0 /* Info.plist */,
+				62B7F7F31C7327A900F33BE0 /* Supporting Files */,
+			);
+			path = WechatWatchDemo;
+			sourceTree = "<group>";
+		};
+		62B7F7F31C7327A900F33BE0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				62B7F7F41C7327A900F33BE0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		62B7F80C1C7327AA00F33BE0 /* WechatWatchDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				62B7F80D1C7327AA00F33BE0 /* WechatWatchDemoTests.m */,
+				62B7F80F1C7327AA00F33BE0 /* Info.plist */,
+			);
+			path = WechatWatchDemoTests;
+			sourceTree = "<group>";
+		};
+		62B7F8171C7327AA00F33BE0 /* WechatWatchDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				62B7F8181C7327AA00F33BE0 /* WechatWatchDemoUITests.m */,
+				62B7F81A1C7327AA00F33BE0 /* Info.plist */,
+			);
+			path = WechatWatchDemoUITests;
+			sourceTree = "<group>";
+		};
+		62B7F82E1C732B6500F33BE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62B7F82C1C732B4800F33BE0 /* WatchConnectivity.framework */,
+				62B7F82A1C732B4300F33BE0 /* WatchKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62B7F8321C732C7900F33BE0 /* WechatWatch */ = {
+			isa = PBXGroup;
+			children = (
+				62B7F8331C732C7900F33BE0 /* Interface.storyboard */,
+				62B7F8361C732C7900F33BE0 /* Assets.xcassets */,
+				62B7F8381C732C7900F33BE0 /* Info.plist */,
+			);
+			path = WechatWatch;
+			sourceTree = "<group>";
+		};
+		62B7F8411C732C7900F33BE0 /* WechatWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				62B7F85E1C732D5300F33BE0 /* ChatListViewController.swift */,
+				62B7F85D1C732D5300F33BE0 /* ChatListCell.swift */,
+				62B7F85C1C732D5300F33BE0 /* ChatController.swift */,
+				62B7F8661C7557F400F33BE0 /* MessageLeftRow.swift */,
+				62B7F8671C7557F400F33BE0 /* MessageRightRow.swift */,
+				62B7F8681C7557F400F33BE0 /* SumitButtonRow.swift */,
+				62B7F86C1C755ADD00F33BE0 /* WatchSessionManager.swift */,
+				62B7F8441C732C7900F33BE0 /* InterfaceController.swift */,
+				62B7F8461C732C7900F33BE0 /* ExtensionDelegate.swift */,
+				62B7F8481C732C7900F33BE0 /* NotificationController.swift */,
+				62B7F84A1C732C7900F33BE0 /* GlanceController.swift */,
+				62B7F84C1C732C7900F33BE0 /* ComplicationController.swift */,
+				62B7F84E1C732C7900F33BE0 /* Assets.xcassets */,
+				62B7F8501C732C7900F33BE0 /* Info.plist */,
+				62B7F8421C732C7900F33BE0 /* Supporting Files */,
+			);
+			path = "WechatWatch Extension";
+			sourceTree = "<group>";
+		};
+		62B7F8421C732C7900F33BE0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				62B7F8431C732C7900F33BE0 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		62B7F7EF1C7327A900F33BE0 /* WechatWatchDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62B7F81D1C7327AA00F33BE0 /* Build configuration list for PBXNativeTarget "WechatWatchDemo" */;
+			buildPhases = (
+				62B7F7EC1C7327A900F33BE0 /* Sources */,
+				62B7F7ED1C7327A900F33BE0 /* Frameworks */,
+				62B7F7EE1C7327A900F33BE0 /* Resources */,
+				62B7F8531C732C7900F33BE0 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62B7F8521C732C7900F33BE0 /* PBXTargetDependency */,
+			);
+			name = WechatWatchDemo;
+			productName = WechatWatchDemo;
+			productReference = 62B7F7F01C7327A900F33BE0 /* WechatWatchDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		62B7F8081C7327AA00F33BE0 /* WechatWatchDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62B7F8201C7327AA00F33BE0 /* Build configuration list for PBXNativeTarget "WechatWatchDemoTests" */;
+			buildPhases = (
+				62B7F8051C7327AA00F33BE0 /* Sources */,
+				62B7F8061C7327AA00F33BE0 /* Frameworks */,
+				62B7F8071C7327AA00F33BE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62B7F80B1C7327AA00F33BE0 /* PBXTargetDependency */,
+			);
+			name = WechatWatchDemoTests;
+			productName = WechatWatchDemoTests;
+			productReference = 62B7F8091C7327AA00F33BE0 /* WechatWatchDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		62B7F8131C7327AA00F33BE0 /* WechatWatchDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62B7F8231C7327AA00F33BE0 /* Build configuration list for PBXNativeTarget "WechatWatchDemoUITests" */;
+			buildPhases = (
+				62B7F8101C7327AA00F33BE0 /* Sources */,
+				62B7F8111C7327AA00F33BE0 /* Frameworks */,
+				62B7F8121C7327AA00F33BE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62B7F8161C7327AA00F33BE0 /* PBXTargetDependency */,
+			);
+			name = WechatWatchDemoUITests;
+			productName = WechatWatchDemoUITests;
+			productReference = 62B7F8141C7327AA00F33BE0 /* WechatWatchDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		62B7F8301C732C7900F33BE0 /* WechatWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62B7F8591C732C7900F33BE0 /* Build configuration list for PBXNativeTarget "WechatWatch" */;
+			buildPhases = (
+				62B7F82F1C732C7900F33BE0 /* Resources */,
+				62B7F8581C732C7900F33BE0 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62B7F8401C732C7900F33BE0 /* PBXTargetDependency */,
+			);
+			name = WechatWatch;
+			productName = WechatWatch;
+			productReference = 62B7F8311C732C7900F33BE0 /* WechatWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		62B7F83C1C732C7900F33BE0 /* WechatWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62B7F8551C732C7900F33BE0 /* Build configuration list for PBXNativeTarget "WechatWatch Extension" */;
+			buildPhases = (
+				62B7F8391C732C7900F33BE0 /* Sources */,
+				62B7F83A1C732C7900F33BE0 /* Frameworks */,
+				62B7F83B1C732C7900F33BE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WechatWatch Extension";
+			productName = "WechatWatch Extension";
+			productReference = 62B7F83D1C732C7900F33BE0 /* WechatWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		62B7F7E81C7327A900F33BE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Aki.Xie;
+				TargetAttributes = {
+					62B7F7EF1C7327A900F33BE0 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					62B7F8081C7327AA00F33BE0 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 62B7F7EF1C7327A900F33BE0;
+					};
+					62B7F8131C7327AA00F33BE0 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 62B7F7EF1C7327A900F33BE0;
+					};
+					62B7F8301C732C7900F33BE0 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					62B7F83C1C732C7900F33BE0 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 62B7F7EB1C7327A900F33BE0 /* Build configuration list for PBXProject "WechatWatchDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 62B7F7E71C7327A900F33BE0;
+			productRefGroup = 62B7F7F11C7327A900F33BE0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				62B7F7EF1C7327A900F33BE0 /* WechatWatchDemo */,
+				62B7F8081C7327AA00F33BE0 /* WechatWatchDemoTests */,
+				62B7F8131C7327AA00F33BE0 /* WechatWatchDemoUITests */,
+				62B7F8301C732C7900F33BE0 /* WechatWatch */,
+				62B7F83C1C732C7900F33BE0 /* WechatWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		62B7F7EE1C7327A900F33BE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62B7F8031C7327A900F33BE0 /* LaunchScreen.storyboard in Resources */,
+				62B7F8001C7327A900F33BE0 /* Assets.xcassets in Resources */,
+				62B7F7FE1C7327A900F33BE0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62B7F8071C7327AA00F33BE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62B7F8121C7327AA00F33BE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62B7F82F1C732C7900F33BE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62B7F8371C732C7900F33BE0 /* Assets.xcassets in Resources */,
+				62B7F8351C732C7900F33BE0 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62B7F83B1C732C7900F33BE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62B7F84F1C732C7900F33BE0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		62B7F7EC1C7327A900F33BE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62B7F8291C73282E00F33BE0 /* WatchConnectivity.m in Sources */,
+				62B7F7FB1C7327A900F33BE0 /* ViewController.m in Sources */,
+				62B7F7F81C7327A900F33BE0 /* AppDelegate.m in Sources */,
+				62B7F7F51C7327A900F33BE0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62B7F8051C7327AA00F33BE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62B7F80E1C7327AA00F33BE0 /* WechatWatchDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62B7F8101C7327AA00F33BE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62B7F8191C7327AA00F33BE0 /* WechatWatchDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62B7F8391C732C7900F33BE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62B7F8491C732C7900F33BE0 /* NotificationController.swift in Sources */,
+				62B7F8691C7557F400F33BE0 /* MessageLeftRow.swift in Sources */,
+				62B7F8471C732C7900F33BE0 /* ExtensionDelegate.swift in Sources */,
+				62B7F86B1C7557F400F33BE0 /* SumitButtonRow.swift in Sources */,
+				62B7F8611C732D5300F33BE0 /* ChatListViewController.swift in Sources */,
+				62B7F84D1C732C7900F33BE0 /* ComplicationController.swift in Sources */,
+				62B7F86D1C755ADD00F33BE0 /* WatchSessionManager.swift in Sources */,
+				62B7F8601C732D5300F33BE0 /* ChatListCell.swift in Sources */,
+				62B7F8451C732C7900F33BE0 /* InterfaceController.swift in Sources */,
+				62B7F86A1C7557F400F33BE0 /* MessageRightRow.swift in Sources */,
+				62B7F84B1C732C7900F33BE0 /* GlanceController.swift in Sources */,
+				62B7F85F1C732D5300F33BE0 /* ChatController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		62B7F80B1C7327AA00F33BE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62B7F7EF1C7327A900F33BE0 /* WechatWatchDemo */;
+			targetProxy = 62B7F80A1C7327AA00F33BE0 /* PBXContainerItemProxy */;
+		};
+		62B7F8161C7327AA00F33BE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62B7F7EF1C7327A900F33BE0 /* WechatWatchDemo */;
+			targetProxy = 62B7F8151C7327AA00F33BE0 /* PBXContainerItemProxy */;
+		};
+		62B7F8401C732C7900F33BE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62B7F83C1C732C7900F33BE0 /* WechatWatch Extension */;
+			targetProxy = 62B7F83F1C732C7900F33BE0 /* PBXContainerItemProxy */;
+		};
+		62B7F8521C732C7900F33BE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62B7F8301C732C7900F33BE0 /* WechatWatch */;
+			targetProxy = 62B7F8511C732C7900F33BE0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		62B7F7FC1C7327A900F33BE0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62B7F7FD1C7327A900F33BE0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		62B7F8011C7327A900F33BE0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62B7F8021C7327A900F33BE0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		62B7F8331C732C7900F33BE0 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62B7F8341C732C7900F33BE0 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		62B7F81B1C7327AA00F33BE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		62B7F81C1C7327AA00F33BE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		62B7F81E1C7327AA00F33BE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WechatWatchDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AX.WechatWatchDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		62B7F81F1C7327AA00F33BE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WechatWatchDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AX.WechatWatchDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		62B7F8211C7327AA00F33BE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WechatWatchDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AX.WechatWatchDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WechatWatchDemo.app/WechatWatchDemo";
+			};
+			name = Debug;
+		};
+		62B7F8221C7327AA00F33BE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WechatWatchDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AX.WechatWatchDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WechatWatchDemo.app/WechatWatchDemo";
+			};
+			name = Release;
+		};
+		62B7F8241C7327AA00F33BE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WechatWatchDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AX.WechatWatchDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WechatWatchDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		62B7F8251C7327AA00F33BE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WechatWatchDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AX.WechatWatchDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WechatWatchDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		62B7F8561C732C7900F33BE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "WechatWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AX.WechatWatchDemo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		62B7F8571C732C7900F33BE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "WechatWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AX.WechatWatchDemo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		62B7F85A1C732C7900F33BE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WechatWatch_Extension;
+				INFOPLIST_FILE = WechatWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = AX.WechatWatchDemo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		62B7F85B1C732C7900F33BE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WechatWatch_Extension;
+				INFOPLIST_FILE = WechatWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = AX.WechatWatchDemo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		62B7F7EB1C7327A900F33BE0 /* Build configuration list for PBXProject "WechatWatchDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62B7F81B1C7327AA00F33BE0 /* Debug */,
+				62B7F81C1C7327AA00F33BE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62B7F81D1C7327AA00F33BE0 /* Build configuration list for PBXNativeTarget "WechatWatchDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62B7F81E1C7327AA00F33BE0 /* Debug */,
+				62B7F81F1C7327AA00F33BE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62B7F8201C7327AA00F33BE0 /* Build configuration list for PBXNativeTarget "WechatWatchDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62B7F8211C7327AA00F33BE0 /* Debug */,
+				62B7F8221C7327AA00F33BE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62B7F8231C7327AA00F33BE0 /* Build configuration list for PBXNativeTarget "WechatWatchDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62B7F8241C7327AA00F33BE0 /* Debug */,
+				62B7F8251C7327AA00F33BE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62B7F8551C732C7900F33BE0 /* Build configuration list for PBXNativeTarget "WechatWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62B7F8561C732C7900F33BE0 /* Debug */,
+				62B7F8571C732C7900F33BE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62B7F8591C732C7900F33BE0 /* Build configuration list for PBXNativeTarget "WechatWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62B7F85A1C732C7900F33BE0 /* Debug */,
+				62B7F85B1C732C7900F33BE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 62B7F7E81C7327A900F33BE0 /* Project object */;
+}

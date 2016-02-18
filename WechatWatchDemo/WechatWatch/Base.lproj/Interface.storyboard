@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--Chat List View Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="ChatListViewController" customModule="WechatWatch_Extension">
+                    <items>
+                        <table alignment="left" id="P4b-Op-gT2">
+                            <items>
+                                <tableRow identifier="ChatListCell" id="1Kz-zX-qV4" customClass="ChatListCell" customModule="WechatWatch_Extension">
+                                    <group key="rootItem" width="1" height="58.5" alignment="left" spacing="5" id="mLn-cW-DVw">
+                                        <items>
+                                            <imageView width="44" height="39" alignment="left" verticalAlignment="center" image="1" id="PVi-gs-HtZ"/>
+                                            <group width="76" height="53" alignment="left" layout="vertical" id="my5-9T-sUi">
+                                                <items>
+                                                    <label alignment="left" verticalAlignment="center" text="我是隔壁老王" textAlignment="left" numberOfLines="0" id="cGi-NK-d7f">
+                                                        <color key="textColor" red="0.78056126640000001" green="0.78798828119999997" blue="0.79338507400000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="font" type="system" pointSize="12"/>
+                                                    </label>
+                                                    <label alignment="left" text="王老五" textAlignment="left" id="784-lX-c4P">
+                                                        <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="iconImage" destination="PVi-gs-HtZ" id="XsO-3M-pav"/>
+                                        <outlet property="messageLabel" destination="cGi-NK-d7f" id="MvT-Qt-Lye"/>
+                                        <outlet property="nameLabel" destination="784-lX-c4P" id="gyi-lz-4Qx"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tableView" destination="P4b-Op-gT2" id="g9S-Wl-Rvl"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="235" y="347"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="BOz-TT-tkC">
+            <objects>
+                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModule="WechatWatch" customModuleProvider="target">
+                    <items>
+                        <group alignment="left" id="t8f-Gd-c4y"/>
+                        <group alignment="left" id="uCw-4Q-Ouw"/>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="235" y="672"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="XkS-y5-khE"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="XkS-y5-khE" id="49B-RR-99y"/>
+                        <segue destination="gdX-wl-uQE" kind="relationship" relationship="dynamicNotificationInterface" id="fKh-qV-3T2"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="235" y="1001"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="KIl-fV-djm">
+            <objects>
+                <controller id="gdX-wl-uQE" customClass="NotificationController" customModule="WechatWatch" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="553" y="1001"/>
+        </scene>
+        <!--ChatView-->
+        <scene sceneID="ESI-XJ-nyT">
+            <objects>
+                <controller identifier="ChatView" hidesWhenLoading="NO" id="GKq-48-rir" customClass="ChatController" customModule="WechatWatch_Extension">
+                    <items>
+                        <label alignment="left" text="Label" id="PTy-0w-sfr"/>
+                        <table alignment="left" semanticContentAttribute="playback" id="QD9-h3-5wK">
+                            <items>
+                                <tableRow identifier="MessageLeftRow" selectable="NO" id="ol3-lr-Aza" customClass="MessageLeftRow" customModule="WechatWatch_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" radius="5" id="I7i-fd-p6x">
+                                        <items>
+                                            <group alignment="left" radius="5" id="sYk-Fl-iju">
+                                                <items>
+                                                    <label alignment="left" text="你好" numberOfLines="0" id="IK8-9u-J7A">
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </label>
+                                                </items>
+                                                <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                                <edgeInsets key="margins" left="5" right="5" top="5" bottom="5"/>
+                                            </group>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <edgeInsets key="margins" left="5" right="5" top="5" bottom="5"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="msgTextLabel" destination="IK8-9u-J7A" id="sHb-dM-SBr"/>
+                                    </connections>
+                                </tableRow>
+                                <tableRow identifier="MessageRightRow" selectable="NO" id="Q9i-Nt-lwa" customClass="MessageRightRow" customModule="WechatWatch_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" radius="5" id="YPv-Rp-FRK">
+                                        <items>
+                                            <group alignment="right" radius="5" id="oGJ-j4-Ehp">
+                                                <items>
+                                                    <label alignment="left" text="你好" numberOfLines="0" id="Faj-NI-Ow5">
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </label>
+                                                </items>
+                                                <color key="backgroundColor" red="0.20000000000000001" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <edgeInsets key="margins" left="5" right="5" top="5" bottom="5"/>
+                                            </group>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <edgeInsets key="margins" left="5" right="5" top="5" bottom="5"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="msgTextLabel" destination="Faj-NI-Ow5" id="3ca-Ix-g4a"/>
+                                    </connections>
+                                </tableRow>
+                                <tableRow identifier="SumitButtonRow" id="OIi-H0-gnr" customClass="SumitButtonRow" customModule="WechatWatch_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" radius="5" id="keK-os-EN7">
+                                        <items>
+                                            <group width="1" height="1" alignment="left" id="N4V-nd-OLy"/>
+                                            <group alignment="center" layout="vertical" radius="10" id="39K-9N-jGx">
+                                                <items>
+                                                    <button width="1" alignment="center" verticalAlignment="center" title="快速回复" enabled="NO" id="y9c-jv-y0V">
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    </button>
+                                                </items>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                            </group>
+                                            <group width="1" height="10" alignment="left" id="jWC-c9-zce"/>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="submitButton" destination="y9c-jv-y0V" id="Eke-5L-zEA"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="nameTitle" destination="PTy-0w-sfr" id="Rz7-P5-qEQ"/>
+                        <outlet property="tableView" destination="QD9-h3-5wK" id="Zjm-GW-sNs"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="461" y="348"/>
+        </scene>
+    </scenes>
+</document>
